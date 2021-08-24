@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+    background-image: url("http://info.morningstardance.com/img/starsbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .App-logo {
@@ -12,6 +15,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 400px;
+    }
+    .SmallBannerLogo {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +50,46 @@
     transform: rotate(360deg);
   }
 }
+
+.MainBannerImage {
+    height: auto;
+    max-width: 100%;
+}
+
+.SmallBannerLogo {
+    height: auto;
+    max-height: 138px;
+    max-width: 168px;
+    position: absolute;
+    left: 28%;
+    top: 12%;
+}
+
+.MainBannerText1  {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+}
+
+.MainBannerText1A {
+    color: white;
+    font: bold 30px/50px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    padding: 10px;
+}
+
+
+.MainBannerText2 {
+    position: absolute;
+    top: 18px;
+    width: 100%;
+}
+
+.MainBannerText2A {
+    color: orange;
+    font: bold 25px/30px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    padding: 10px;
+}
+
+
