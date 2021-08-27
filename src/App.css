@@ -92,4 +92,14 @@
     padding: 10px;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(10,10,100);
+    color:white;
+    min-height: 400px;
+    min-width: 75px;
+    width:52%;
+    margin:0 auto;
+}
 
