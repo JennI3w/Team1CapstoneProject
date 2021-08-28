@@ -95,7 +95,7 @@
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgb(10,10,100);
+    background-color: rgb(10,10,100, 0.6);
     color:white;
     min-height: 400px;
     min-width: 75px;
@@ -103,3 +103,17 @@
     margin:0 auto;
 }
 
+.Footer {
+    color: white;
+}
+
+.SocialFooter {
+    background-color: rgb(10,10,100, 0.8);
+    width: 52%;
+    margin: 0 auto;
+}
+
+.CopyrightFooter {
+    color: white;
+
+}

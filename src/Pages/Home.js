@@ -3,6 +3,7 @@ import '../App.css';
 import React, { useState, Component, useEffect, createContext, useContext } from 'react';
 import logo from '../Images/newHeaderLogo.jpg';
 import TopBanner from '../WebpageComponents/TopBanner';
+import Footer from '../WebpageComponents/Footer';
 
 
 
@@ -19,10 +20,10 @@ const Home = () => {
         
 
         <div className="App">
-
-          
-            <TopBanner />
-
+            <title>MorningStarDance</title>
+            <header>
+                <TopBanner />
+            </header>
             <div class="flex-container">
 
                <p> 2016 Chinese Spring Festival Gala News
@@ -34,7 +35,9 @@ const Home = () => {
                     </p>
             </div>
           
-        
+            <footer>
+            <Footer />
+             </footer>
         </div>
         
         );
