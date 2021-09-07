@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
 
 .App-logo {
@@ -96,24 +97,40 @@
     display: flex;
     flex-wrap: nowrap;
     background-color: rgb(10,10,100, 0.6);
-    color:white;
+    color: white;
     min-height: 400px;
     min-width: 75px;
-    width:52%;
-    margin:0 auto;
+    width: 52%;
+    margin: 0 auto;
 }
 
 .Footer {
     color: white;
+    padding-bottom: 6%;
 }
 
 .SocialFooter {
     background-color: rgb(10,10,100, 0.8);
     width: 52%;
     margin: 0 auto;
+
+
 }
 
 .CopyrightFooter {
     color: white;
 
+}
+
+Nav {
+    width: 52%;
+    margin: 0 auto;
+    align-content: center;
+    background-color: rgb(10,10,100, 0.8);
+    color: #ff0000;
+    text-align: center;
+    font-size: 20px;
+}
+.NavBarLinks {
+    margin: 10px;
 }

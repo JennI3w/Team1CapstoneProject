@@ -4,8 +4,9 @@
     "\\src",
     "\\src\\Images",
     "\\src\\Pages",
+    "\\src\\Utility",
     "\\src\\WebpageComponents"
   ],
-  "SelectedNode": "\\src\\Pages\\Home.js",
+  "SelectedNode": "\\src\\WebpageComponents\\NavigationBar.js",
   "PreviewInSolutionExplorer": false
 }

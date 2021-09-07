@@ -4,6 +4,7 @@ import React, { useState, Component, useEffect, createContext, useContext } from
 import logo from '../Images/newHeaderLogo.jpg';
 import TopBanner from '../WebpageComponents/TopBanner';
 import Footer from '../WebpageComponents/Footer';
+import NavigationBar from '../WebpageComponents/NavigationBar';
 
 
 
@@ -23,9 +24,12 @@ const Home = () => {
             <title>MorningStarDance</title>
             <header>
                 <TopBanner />
+                <NavigationBar />
             </header>
-            <div class="flex-container">
 
+
+            <div class="flex-container">
+              
                <p> 2016 Chinese Spring Festival Gala News
                 In addition to the super stars and professional artists, a group of US student ballerinas, from MorningStar Dance Academy, performed extremely well and gave wow the audience with a dance that combines the beauty of oriental and western art.
 
