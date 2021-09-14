@@ -23,8 +23,12 @@ const NavigationBar = () => {
                 <Container>
                     <Nav defaultActiveKey="/Home" className="me-auto" >
                         <NavLink className="NavBarLinks" to="/Home">Home</NavLink>
-                        <NavLink className="NavBarLinks" to="/Projects">Projects</NavLink>
-                        <NavLink className="NavBarLinks" to="/Projects">Projects</NavLink>
+                        <NavLink className="NavBarLinks" to="/About">About Us</NavLink>
+                        <NavLink className="NavBarLinks" to="/Camps">Camps</NavLink>
+                        <NavLink className="NavBarLinks" to="/Competitions">Competitions</NavLink>
+                        <NavLink className="NavBarLinks" to="/Gallery">Gallery</NavLink>
+                        <NavLink className="NavBarLinks" to="/Links">Links</NavLink>
+                        <NavLink className="NavBarLinks" to="/Contact">Contact Us</NavLink>
                     </Nav>
                 </Container>
             </Navbar>

@@ -102,6 +102,7 @@
     min-width: 75px;
     width: 52%;
     margin: 0 auto;
+    justify-content:center;
 }
 
 .Footer {
@@ -119,7 +120,6 @@
 
 .CopyrightFooter {
     color: white;
-
 }
 
 Nav {
@@ -127,10 +127,14 @@ Nav {
     margin: 0 auto;
     align-content: center;
     background-color: rgb(10,10,100, 0.8);
-    color: #ff0000;
     text-align: center;
     font-size: 20px;
 }
 .NavBarLinks {
     margin: 10px;
+    color: orange;
+
+}
+.NavBarLinks:hover {
+    color: red;
 }
