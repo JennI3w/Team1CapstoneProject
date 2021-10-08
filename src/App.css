@@ -122,6 +122,13 @@
     color: white;
 }
 
+.Mini-nav {
+    background-color: rgb(10,10,100, 0.8);
+    padding: 5px, 3px, 2px, 3px;
+    font-size: 20px;
+    color: orange;
+}
+
 Nav {
     width: 52%;
     margin: 0 auto;

@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Images",
+    "\\src\\PageLoad",
+    "\\src\\PageLoad\\AboutPage",
     "\\src\\Pages",
     "\\src\\Utility",
     "\\src\\WebpageComponents"
   ],
-  "SelectedNode": "\\src\\WebpageComponents\\NavigationBar.js",
+  "SelectedNode": "\\src\\Pages\\Contact.js",
   "PreviewInSolutionExplorer": false
 }
