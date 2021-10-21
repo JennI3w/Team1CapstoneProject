@@ -5,6 +5,7 @@ import logo from '../Images/newHeaderLogo.jpg';
 import TopBanner from '../WebpageComponents/TopBanner';
 import Footer from '../WebpageComponents/Footer';
 import NavigationBar from '../WebpageComponents/NavigationBar';
+
 import { send } from 'emailjs-com';
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
@@ -53,11 +54,13 @@ const Contact = () => {
                     <input type="email" name="email" />
                     <label>Message</label>
                     <textarea name="message" />
+                    <input type="file" name="file"/>
                     <input type="submit" value="Send" />
                 </form>
                 );
+    
             </div>
-
+         
             <footer>
                 <Footer />
             </footer>

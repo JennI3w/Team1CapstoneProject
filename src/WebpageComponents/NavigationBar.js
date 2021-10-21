@@ -28,7 +28,7 @@ const NavigationBar = () => {
                         <NavLink className="NavBarLinks" to="/Competitions">Competitions</NavLink>
                         <NavLink className="NavBarLinks" to="/Gallery">Gallery</NavLink>
                         <NavLink className="NavBarLinks" to="/Links">Links</NavLink>
-                        <NavLink className="NavBarLinks" to="/Contact">Contact Us</NavLink>
+                        <NavLink className="NavBarLinks" to="/Contact">Contact us</NavLink>
                     </Nav>
                 </Container>
             </Navbar>

@@ -1,42 +1,68 @@
 
 import '../../App.css';
-import React, { useState, Component, useEffect, createContext, useContext } from 'react';
+import React, { useState, Component, useEffect, createContext, useContext, useRef } from 'react';
 import TopBanner from '../../WebpageComponents/TopBanner';
 import Footer from '../../WebpageComponents/Footer';
 import NavigationBar from '../../WebpageComponents/NavigationBar';
+import emailjs from 'emailjs-com';
 import { send } from 'emailjs-com';
 import { init } from 'emailjs-com';
+
 init("user_g4oYOtObrTqkhRVkjkxKh");
 
 
-export default function Employment({data}) {
+export default function Employment() {
 
 
-
-    const [toSend, setToSend] = useState({
-        from_name: '',
-        to_name: '',
-        message: '',
-        reply_to: '',
-    });
+    const form = useRef();
 
 
+    const sendEmail = (e) => {
+        e.preventDefault();
 
+        emailjs.sendForm('default_service', 'template_contactus', form.current, 'user_g4oYOtObrTqkhRVkjkxKh')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+
+    }
 
 
 
     return (
 
 
-        <div className="Employment">
-            <h2>Teacher Position</h2>
+        <div className="App">
+            <title>MorningStarDance</title>
+            <header>
+                <TopBanner />
+                <NavigationBar />
+            </header>
 
-       
 
+            <div className="flex-container">
+                <form ref={form} onSubmit={sendEmail} >
+                    <label>Name</label>
+                    <input type="text" name="name" />
+                    <label>Email</label>
+                    <input type="email" name="email" />
+                    <label>Message</label>
+                    <textarea name="message" />
+                    <input type="submit" value="Send" />
+                </form>
+                );
+          
+            </div>
+         
+            <footer>
+                <Footer />
+            </footer>
         </div>
 
     );
-
 
 
 
@@ -46,68 +72,3 @@ export default function Employment({data}) {
 
 
 //https://dev.to/daliboru/how-to-send-emails-from-a-form-in-react-emailjs-27d1
-
-/*
- * 
- *
-    const [toSend, setToSend] = useState({
-        from_name: '',
-        to_name: '',
-        message: '',
-        reply_to: '',
-    });
- *   const onSubmit = (e) => {
-        e.preventDefault();
-        send(
-            'service_morningstardance',
-            'TEMPLATE ID',
-            toSend,
-            'User ID'
-        )
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-            })
-            .catch((err) => {
-                console.log('FAILED...', err);
-            });
-    };
-
-    const handleChange = (e) => {
-        setToSend({ ...toSend, [e.target.name]: e.target.value });
-    };
-
- * 
- *      <form onSubmit={onSubmit}>
-                <input
-                    type='text'
-                    name='from_name'
-                    placeholder='MorningStar Dance'
-                    value={toSend.from_name}
-                    onChange={handleChange}
-                />
-                <input
-                    type='text'
-                    name='to_name'
-                    placeholder='to name'
-                    value={toSend.to_name}
-                    onChange={handleChange}
-                />
-                <input
-                    type='text'
-                    name='message'
-                    placeholder='Thank you for submitting your application'
-                    value={toSend.message}
-                    onChange={handleChange}
-                />
-                <input
-                    type='text'
-                    name='reply_to'
-                    placeholder='morningstar.emailburst@gmail.com'
-                    value={toSend.reply_to}
-                    onChange={handleChange}
-                />
-                <button type='submit'>Submit</button >
-            </form>
- * 
- * 
- * */

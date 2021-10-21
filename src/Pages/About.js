@@ -20,7 +20,12 @@ const About = () => {
     };
 
 
-
+    useEffect(() => {
+        const callFirstPage = async () => {
+            LoadComponent("AboutUs");
+        };
+        callFirstPage();
+    }, []);
 
 
 
@@ -46,9 +51,8 @@ const About = () => {
                         <button class="Mini-nav" onClick={() => LoadComponent("Instructors")}>
                             Instructors
                           </button>
-                        <button class="Mini-nav" > 
-                            Employment
-                        </button>
+
+                           
                         </center>
                             {component}
 
