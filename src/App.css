@@ -1,6 +1,11 @@
 
 html, body, #root {
-    height:100%;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://info.morningstardance.com/img/starsbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .App {

@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         
-        <section class="fill-height-or-more">
+
         <div className="App">
             <title>MorningStarDance</title>
             <header>
@@ -43,7 +43,7 @@ const Home = () => {
             <Footer />
              </footer>
         </div>
-        </section>
+
         );
 
 

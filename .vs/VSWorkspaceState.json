@@ -5,9 +5,8 @@
     "\\src\\PageLoad",
     "\\src\\PageLoad\\AboutPage",
     "\\src\\Pages",
-    "\\src\\Utility",
     "\\src\\WebpageComponents"
   ],
-  "SelectedNode": "\\src\\WebpageComponents\\Footer.js",
+  "SelectedNode": "\\src\\Pages\\Home.js",
   "PreviewInSolutionExplorer": false
 }

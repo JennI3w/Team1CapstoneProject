@@ -31,6 +31,7 @@ const Information = () => {
             <div class="flex-container">
                     <body>
                         <span>
+                            <center>
                             <h2> Class Information </h2>
                             <p> Classical Ballet </p>
                             <p> Contemporary Ballet </p>
@@ -42,7 +43,7 @@ const Information = () => {
                             <p> Adult Ballet </p>
                             <p> Adult Exercises </p>
                             <p> Adult Chinese Traditional and Folk </p>
-
+                            </center>
                     </span>
                     </body>
                 </div>
